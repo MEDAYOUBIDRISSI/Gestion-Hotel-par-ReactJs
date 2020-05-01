@@ -1,6 +1,6 @@
 git init
 git add .
-git commit -m "first commit"
+git commit -m "Add asset folders"
 git remote add origin https://github.com/MAI202020/Gestion-Hotel-par-ReactJs.git
 git push -f origin master
 
