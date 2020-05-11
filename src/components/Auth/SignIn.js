@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Auth.css'
- import 'bootstrap/dist/css/bootstrap.min.css'
+//  import 'bootstrap/dist/css/bootstrap.min.css'
 import Axios from 'axios'
 import URL from '../../URL_PATH'
 // import 'font-awesome/css/font-awesome.min.css'
