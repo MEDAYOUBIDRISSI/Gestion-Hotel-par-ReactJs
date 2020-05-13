@@ -1,6 +1,5 @@
-git init
 git add .
-git commit -m "Add Template"
+git commit -m "Add Compenets of Site Web"
 git remote add origin https://github.com/MAI202020/Gestion-Hotel-par-ReactJs.git
 git push -f origin master
 
