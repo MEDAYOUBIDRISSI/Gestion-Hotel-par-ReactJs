@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { getChambres } from '../../actions/ChambreAction'
+class Fotter extends Component {
 
-export default function Fotter() {
-    return (
+    componentDidMount(){
+        this.props.getChambres()
+    }
+
+    render(){ return (
       <div>
           <div class="section">
                 <div id="owl-sep-2" class="owl-carousel owl-theme">								 
@@ -156,4 +162,11 @@ export default function Fotter() {
       </div>
 	
     )
+    }
 }
+const mapStateToProps = (state) =>{
+    return {
+      users : state.chambres.chambres
+    }
+  }
+export default connect(mapStateToProps,{getChambres})(Fotter)
